@@ -38,21 +38,4 @@ headerLogoConatiner.addEventListener('click', () => {
 })
 
 
-var recipient="markagugo";
-var at = String.fromCharCode(64);
-var dotcom="gmail.com";
-var mail="mailto:";
 
-
-
-// var sendButton = document.getElementById("sub");
-
-// function js_send() {
-//     sendButton.value='Sending…';
-//     sendButton.disabled=true;
-//     window.open(mail+recipient+at+dotcom);
-    
-// }
-
-
-// sendButton.onclick = js_send;

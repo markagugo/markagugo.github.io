@@ -1,0 +1,219 @@
+.about {
+  display: flex;
+  width: 100%; 
+  align-items: center; 
+  justify-content: center; 
+  background-color: transparent;
+  color: white;
+  padding: 50px; /* Adjust padding for better responsiveness */
+  box-sizing: border-box;
+  flex-direction: row; /* Default: row layout */
+}
+
+.left-side, .right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  font-size: 3rem; 
+  margin-bottom: 10px;
+}
+
+.intro {
+  font-size: 1.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 20px; /* Added padding for spacing */
+}
+
+.right-side img {
+  max-width: 100%; /* Responsive image */
+  height: auto;
+  border-radius: 50%; /* Optional: Rounded image */
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+  .about {
+      flex-direction: column; /* Stack items vertically */
+      padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .left-side {
+      order: 1; /* Name first */
+  }
+
+  .right-side {
+      order: 2; /* Image second */
+      margin-bottom: 20px; /* Space between image and intro */
+  }
+
+  .intro {
+      text-align: center; /* Centered text for better readability */
+      order: 3; /* Intro third */
+      padding: 10px; /* Adjust padding */
+  }
+
+  .name {
+      font-size: 2rem; /* Smaller font size for mobile */
+  }
+
+  .intro {
+      font-size: 1rem; /* Smaller font size for mobile */
+  }
+}
+
+
+  
+  
+.tools {
+  display: flex;
+  flex-direction: column; /* Stack title and tools box vertically */
+  align-items: center; /* Center the content horizontally */
+  justify-content: center; /* Center the content vertically */
+  width: 100%; /* Full width of the parent container */
+  color: white;
+  margin-top: 50px;
+}
+
+.tools h1 {
+  margin-bottom: 30px; /* Space between title and tools box */
+  text-align: center; /* Center-align the title text */
+}
+
+.tools_box {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive columns */
+  column-gap: 100px; /* Space between grid items */
+  row-gap: 30px;
+  width: 100%; /* Full width of the parent container */
+  padding-left: 200px;
+  padding-right: 200px;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.tool_card {
+  display: flex; /* Align items in a row */
+  flex-direction: column; /* Stack icon and title vertically */
+  align-items: center; /* Center-align items horizontally */
+  justify-content: center; /* Center-align items vertically */
+  width: 230px;
+  height: 150px;
+  border: 1px solid rgb(34, 80, 44); /* Border style */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center; /* Center-align text inside cards */
+  background-color: rgba(0, 0, 0, 0.5); /* Background color for better visibility */
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for effects */
+}
+
+.tool_card .icon {
+  font-size: 2rem; /* Size of the icon */
+  margin-bottom: 10px; /* Space between icon and title */
+}
+
+.tool_card .title {
+  font-size: 1rem; /* Font size for the title */
+}
+
+.tool_card:hover {
+  transform: scale(1.05); /* Slightly scale up the card on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+  .tools_box {
+      grid-template-columns: repeat(2, 1fr); /* Two items per row on mobile */
+      padding-left: 20px;
+      padding-right: 20px;
+      column-gap: 20px; /* Reduced space between items */
+      row-gap: 20px;
+  }
+
+  .tools h1 {
+    font-size: 1.5rem;
+    padding: 2px;
+  }
+
+  .tool_card {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+  }
+
+  .tool_card .icon {
+      font-size: 1.5rem; /* Adjust icon size for smaller screens */
+  }
+
+  .tool_card .title {
+      font-size: 0.875rem; /* Adjust font size for smaller screens */
+
+  }
+}
+
+  
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 40px; /* Added padding for spacing */
+  margin-top: 30px;
+}
+
+.contact p {
+  margin-bottom: 20px; /* Space between title and icons */
+  color: rgb(110, 110, 109);
+}
+
+.contact_list {
+  display: flex;
+  gap: 20px; /* Space between icons */
+}
+
+.icon_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Width of the circular background */
+  height: 50px; /* Height of the circular background */
+  border-radius: 50%; /* Makes the container circular */
+  background-color: white; /* Background color of the circle */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+  transition: transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.icon_container .icon {
+  color: black; /* Icon color */
+  font-size: 1.5rem; /* Size of the icons */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.contact_list a:hover .icon {
+  color: #918f0c; /* Change color on hover */
+  transform: scale(1.1); /* Slightly scale up on hover */
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+  .contact_list {
+      gap: 10px; /* Reduce gap between icons */
+  }
+
+  .contact h1 {
+    font-size: 1.5rem
+  }
+  .icon_container {
+      width: 30px; /* Reduced width for smaller screens */
+      height: 30px; /* Reduced height for smaller screens */
+  }
+
+  .icon_container .icon {
+      font-size: 1.2rem; /* Reduced icon size for smaller screens */
+  }
+}

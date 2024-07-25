@@ -1,0 +1,74 @@
+.footer {
+    background-color: #1a1a1a; /* Dark background color */
+    color: white; /* Text color */
+    padding: 10px; /* Space around the content */
+    display: flex;
+    justify-content: space-between; /* Space out the left and right sections */
+    align-items: center; /* Center items vertically */
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Space out the left and right sections */
+    width: 100%;
+}
+
+.footer-left {
+    text-align: left; /* Align text to the left */
+    margin-left: 20px;
+}
+
+.footer-left p {
+    font-size: 0.875rem; /* Smaller font size for the text */
+}
+
+.footer-right {
+    display: flex;
+    gap: 20px; /* Space between icons */
+    margin-right: 20px;
+}
+
+.footer-right a {
+    color: white; /* Icon color */
+    font-size: 1.5rem; /* Size of the icons */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.footer-right a:hover {
+    color: #00aaff; /* Change color on hover */
+    transform: scale(1.1); /* Slightly scale up on hover */
+}
+
+.icon {
+    font-size: 1.5rem; /* Adjust icon size if needed */
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Stack left and right sections vertically */
+        align-items: center; /* Center-align content */
+    }
+
+    .footer-left {
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 10px; /* Space below the text */
+        text-align: center; /* Center-align text */
+    }
+
+    .footer-left p {
+        font-size: 0.75rem; /* Smaller font size for the text */
+    }
+
+    .footer-right {
+        display: none;
+    }
+}

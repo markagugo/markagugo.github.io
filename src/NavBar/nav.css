@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+    background-color: rgba(49, 48, 48, 0.5); 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.75rem 1.35rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(34, 80, 44);
+    margin-left: 10px;
+}
+ 
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 200%;
+    z-index: 25;
+}
+
+
+
+.links a {
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+.links.show {
+    left: 0;
+    padding: 6rem 1rem 1rem;
+    background-color: #191a19f2;
+    height: 100vh;
+    width: 100%;
+}
+
+.links.show a {
+    color: white;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.menu {
+    --height: 4px;
+    --width: 16px;
+    --bg: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    align-items: flex-end;
+    cursor: pointer;
+    position: absolute;
+    right: 1.35rem;
+    z-index: 50;
+}
+
+.menu.opened {
+    --bg: white;
+}
+
+.menu .middle {
+    height: var(--height);
+    width: var(--width);
+    background-color: var(--bg);
+}
+
+.menu::before,
+  .menu::after {
+    content: "";
+    background-color: var(--bg);
+    height: var(--height);
+    transition: 0.2s ease-in-out;
+}
+
+.menu::before {
+    width: calc(var(--width) / 2);
+}
+
+.menu::after {
+    width: calc(var(--width) * 1.5);
+}
+
+.menu.opened::before {
+    width: calc(var(--width) * 1.5);
+}
+
+.menu.opened::after {
+    width: calc(var(--width) / 2);
+}
+  
+@media screen and (min-width: 1025px) {
+    nav {
+      justify-content: space-between;
+    }
+    .menu {
+      display: none;
+    }
+    .links {
+      position: static;
+      flex-direction: row;
+      gap: 1rem;
+    }
+}
+  

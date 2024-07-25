@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/markagugo.github.io/static/css/main.396f0430.css",
+    "main.js": "/markagugo.github.io/static/js/main.ff842cc7.js",
+    "static/js/453.5bac2104.chunk.js": "/markagugo.github.io/static/js/453.5bac2104.chunk.js",
+    "static/media/space.jpg": "/markagugo.github.io/static/media/space.cad7e2dcfa7ceb06dbd7.jpg",
+    "static/media/mark_agugo_resume.pdf": "/markagugo.github.io/static/media/mark_agugo_resume.ce853ada1a3ad33249fd.pdf",
+    "static/media/fa-solid-900.ttf": "/markagugo.github.io/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
+    "static/media/fa-brands-400.ttf": "/markagugo.github.io/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
+    "static/media/checkers.png": "/markagugo.github.io/static/media/checkers.f0fdf1b5e993cfa2160b.png",
+    "static/media/fa-solid-900.woff2": "/markagugo.github.io/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
+    "static/media/xudo.png": "/markagugo.github.io/static/media/xudo.d04476e7d81b4f12395a.png",
+    "static/media/gradepro.png": "/markagugo.github.io/static/media/gradepro.9df801235889c0e885bf.png",
+    "static/media/fa-brands-400.woff2": "/markagugo.github.io/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
+    "static/media/space.svg": "/markagugo.github.io/static/media/space.6ff7b0e0cab08da48c6665c519430b43.svg",
+    "static/media/resume.png": "/markagugo.github.io/static/media/resume.25cabcec599326dfc738.png",
+    "static/media/fa-regular-400.ttf": "/markagugo.github.io/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/fa-regular-400.woff2": "/markagugo.github.io/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
+    "static/media/fa-v4compatibility.ttf": "/markagugo.github.io/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
+    "static/media/fa-v4compatibility.woff2": "/markagugo.github.io/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
+    "index.html": "/markagugo.github.io/index.html",
+    "main.396f0430.css.map": "/markagugo.github.io/static/css/main.396f0430.css.map",
+    "main.ff842cc7.js.map": "/markagugo.github.io/static/js/main.ff842cc7.js.map",
+    "453.5bac2104.chunk.js.map": "/markagugo.github.io/static/js/453.5bac2104.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.396f0430.css",
+    "static/js/main.ff842cc7.js"
+  ]
+}
